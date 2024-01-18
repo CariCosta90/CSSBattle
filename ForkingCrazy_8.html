@@ -1,0 +1,75 @@
+<div>
+    <div class="body">
+        <div class="teeth"></div>
+        <div class="teeth"></div>
+        <div class="teeth"></div>
+    </div>
+    <div class="handle"></div>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; }
+
+  div {
+    height: 100%;
+    width: auto;
+    background: #6592CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body{
+    height: 60%;
+    width: 60%;
+    background: #060F55;
+    border-radius: 30px 30px 200px 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .handle{
+    background: #060F55;
+    width: 50px;
+    height: 25%;
+    position: absolute;
+    margin-top: 90%;
+  }
+  .teeth{
+    background: #6592CF;    
+    height: 50%;
+    width: 50px;
+    border-radius: 0 0 100px 100px;    
+  }
+  .teeth::after{
+    background: #060F55;
+    content: '';
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    top: 148;
+    margin-right: 12%;
+    box-shadow: 10px -12px 0 10px #6592CF;
+    border-top-right-radius: 100%; 
+  }
+  .teeth::before{
+    background: #060F55;    
+    content: '';
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    top: 148;
+    margin-left: 12%;
+    box-shadow: -10px -10px 0 10px #6592CF;
+    border-top-left-radius: 100%; 
+  }
+
+
+
+
+
+</style>
